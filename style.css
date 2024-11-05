@@ -185,6 +185,17 @@ time,
   border-left: 3px solid #1c7702;
 }
 
+.btn {
+  color: #ffffff;
+  background: #25004e;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 2s;
+}
+.btn:hover {
+  background-color: rgb(85.3846153846, 0, 180);
+}
+
 /* -------------------------- section 2 ------------------------------- */
 .col3-span-end-row2 {
   grid-template-columns: 1fr 1fr 2fr;
@@ -234,13 +245,10 @@ div.more-left {
 
 .bgcolor {
   background-color: #1c7702;
+  transition: background-color 2s;
 }
-
-.btn {
-  color: #ffffff;
-  background: #25004e;
-  padding: 10px;
-  border-radius: 5px;
+.bgcolor:hover {
+  background-color: rgb(2.8429752066, 122.958677686, 169.1570247934);
 }
 
 /* -------------------------- section 3 ------------------------------- */
@@ -316,50 +324,41 @@ footer nav.main-menu a:last-child {
 
 @media screen and (max-width: 900px) {
   .grid,
-.col2-newslist,
-.col3-span-start-row2,
-.col3-span-end-row2,
-.col3-row2,
-.column3,
-.column4 {
+  .col2-newslist,
+  .col3-span-start-row2,
+  .col3-span-end-row2,
+  .col3-row2,
+  .column3,
+  .column4 {
     grid-template-columns: 1fr;
   }
-
   img {
     width: 100%;
   }
-
   .flex {
     flex-direction: column;
     flex-wrap: wrap;
   }
-
   footer nav.main-menu a {
     border-right: none;
     margin: 5px auto;
   }
-
   .col3-span-end-row2 .box3,
-.col3-row2 .box3 {
+  .col3-row2 .box3 {
     grid-column: 1;
   }
-
   .col3-span-end-row2 .box3 {
     grid-column: 1;
   }
-
   .m-left {
     margin-left: 0;
   }
-
   .m-right {
     margin-right: 0;
   }
-
   .margin-both {
     margin: 0px auto;
   }
-
   #footer-up {
     padding: 20px 10px;
   }
